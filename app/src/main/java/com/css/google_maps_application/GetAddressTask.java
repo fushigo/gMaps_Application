@@ -32,7 +32,6 @@ public class GetAddressTask extends AsyncTask<Location, Void, String> {
             addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
         } catch (IOException e) {
             result = "Service Not Available";
-            throw new RuntimeException(e);
         }
 
         if (addresses == null && addresses.size() == 0){

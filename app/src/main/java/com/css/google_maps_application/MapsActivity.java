@@ -117,6 +117,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onTaskCompleted(String result) {
-        locationTextView.setText("Lokasi anda:" + result);
+        locationTextView.setText("Alamat" + result);
     }
 }
